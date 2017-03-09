@@ -37,7 +37,7 @@ class HttpRequest
     }
 
     if @extra_headers
-      headers.merge @extra_headers
+      headers.merge! @extra_headers
     end
 
     uri = URI.parse(@url)
@@ -65,7 +65,7 @@ class HttpRequest
     req.body = @data
 
     res = http.request(req)
-
+    
     res.body
   end
 

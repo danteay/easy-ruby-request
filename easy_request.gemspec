@@ -9,7 +9,7 @@ Dir.glob('./lib/easy_request/*.rb').each do |archivo| li.push archivo end
 
 Gem::Specification.new do |spec|
   spec.name          = 'easy_request'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ['Eduardo Aguilar']
   spec.email         = ['dante.aguilar41@gmail.com']
 

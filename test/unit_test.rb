@@ -14,6 +14,20 @@ class MyTest < MiniTest::Unit::TestCase
   # Fake test
   def test_get
     response = EasyRequest.get(@url)
+    
+    assert !response.empty?
+  end
+
+  def test_post
+    auth = {
+      user: 'RQzkxfNhD777DA5u5s8pefgTzZyJ2gvc',
+      pass: ''
+    }
+    data = {
+      email: 'asd@asd.com',
+      url:'https://compropago.com'
+    }
+    response = EasyRequest.post('https://ms-auth-staging.herokuapp.com/auth/recover_password', data, auth)
     puts response
     assert true
   end
