@@ -9,7 +9,7 @@ Dir.glob('./lib/easy_request/*.rb').each do |archivo| li.push archivo end
 
 Gem::Specification.new do |spec|
   spec.name          = 'easy_request'
-  spec.version       = '0.0.2'
+  spec.version       = '1.0.0'
   spec.authors       = ['Eduardo Aguilar']
   spec.email         = ['dante.aguilar41@gmail.com']
 
@@ -22,10 +22,9 @@ Gem::Specification.new do |spec|
   spec.files         = li
 
   # Dependencias en desarrollo descargables de rubygems.org
-  spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'minitest'
+  spec.add_development_dependency 'bundler', '~> 1.0'
+  spec.add_development_dependency 'rake', '~> 12.0'
+  spec.add_development_dependency 'minitest', '~> 5.10'
 
   # Dependencias en produccion que sean descargables de rubygems.org
-  spec.add_runtime_dependency 'json', '~> 1.7'
 end
