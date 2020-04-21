@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   # Dependencias en desarrollo descargables de rubygems.org
   spec.add_development_dependency 'bundler', '~> 1.0'
-  spec.add_development_dependency 'rake', '~> 12.0'
+  spec.add_development_dependency 'rake', '~> 12.3.3'
   spec.add_development_dependency 'minitest', '~> 5.10'
 
   # Dependencias en produccion que sean descargables de rubygems.org
