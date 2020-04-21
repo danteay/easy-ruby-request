@@ -1,24 +1,22 @@
 PATH
   remote: .
   specs:
-    easy_request (0.0.2)
-      json (~> 1.7)
+    easy_request (1.0.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    json (1.8.6)
-    minitest (5.8.5)
-    rake (12.0.0)
+    minitest (5.14.0)
+    rake (12.3.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler!
+  bundler (~> 1.0)!
   easy_request!
-  minitest!
-  rake!
+  minitest (~> 5.10)!
+  rake (>= 12.3.3)!
 
 BUNDLED WITH
    1.14.6
