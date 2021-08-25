@@ -13,7 +13,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.0)!
+  bundler (>= 2.2.10)!
   easy_request!
   minitest (~> 5.10)!
   rake (>= 12.3.3)!
